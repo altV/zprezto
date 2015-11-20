@@ -11,3 +11,25 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export PATH="$PATH:$HOME/Android/Sdk/platform-tools/" # Add RVM to PATH for scripting
+
+alias sai="sudo apt-get install"
+alias gf="git f"
+alias gs="git status"
+alias gd="git diff"
+alias gl="git groa"
+alias glp="git froap"
+alias ta="tig --all"
+
+alias ra="cd .; spring rails"
+alias rk="cd .; spring rake"
+alias rs="cd .; spring rspec"
+alias st="cd .; spring stop"
+alias rb="cd .; bundle -j30"
+
+alias zshconfig="vim /home/valt/.zprezto/runcoms/zshrc"
+
+eval `opam config env`
